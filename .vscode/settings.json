@@ -2,8 +2,8 @@
   "typescript.tsdk": "./node_modules/typescript/lib",
   "npm.packageManager": "pnpm",
   "editor.tabSize": 2,
-	"editor.formatOnSave": true,
-	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true, // 保存格式化文件
+	"editor.defaultFormatter": "esbenp.prettier-vscode", // 指定 prettier 为所有文件默认格式化器
   "editor.quickSuggestions": {
     "other": true,
     "comments": true,
@@ -14,6 +14,8 @@
     "source.fixAll.eslint": "explicit",
     "source.fixAll.stylelint": "explicit"
   },
+   // Stylelint 校验文件
+   "stylelint.validate": ["css", "scss", "vue", "html"],
   "files.eol": "\n",
   "search.exclude": {
     "**/node_modules": true,
@@ -77,4 +79,7 @@
   "i18n-ally.localesPaths": [
     "src/lang"
   ],
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 }
