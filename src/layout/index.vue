@@ -173,6 +173,7 @@ watch(route, () => {
   }
 
   .main-container {
+    /* stylelint-disable-next-line declaration-property-value-no-unknown */
     height: calc(100vh - $navbar-height);
     margin-left: 0;
   }
